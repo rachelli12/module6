@@ -27,7 +27,7 @@ def score_input(test_name, test_score=0, invalid_message='Please try again'):
         if 0 <= score <= 100:
             return f'{test}: {score}'
         else:
-            return "invalid input"
+            return "Please try again"
     except ValueError as err:
         print("ValueError occurred", err)
         raise ValueError
