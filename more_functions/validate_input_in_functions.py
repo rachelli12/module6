@@ -21,16 +21,17 @@ def score_input(test_name, test_score=0, invalid_message='Please try again'):
     :raises keyError: raises an exception
     """
     #return {test_name: test_score}
-    try:
-        test = test_name
-        score = int(test_score)
-        if 0 <= score <= 100:
-            return f'{test}: {score}'
-        else:
-            return "Please try again"
-    except ValueError as err:
-        print("ValueError occurred", err)
-        raise ValueError
+    while True:
+        try:
+            test = test_name
+            score = int(test_score)
+            if 0 <= score <= 100:
+                return f'{test}: {score}'
+            else:
+                return "Please try again"
+        except ValueError as err:
+            print("ValueError occurred", err)
+            raise ValueError
 
 if __name__ == '__main__':
     try:
