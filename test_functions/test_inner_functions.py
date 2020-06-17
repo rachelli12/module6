@@ -1,3 +1,10 @@
+"""
+Program name: test_inner_functions,py
+Author: Rachel Li
+Last date modified: 16/06/2020
+
+This program tests inner_functions_assignment.py
+"""
 import unittest
 import unittest.mock as mock
 from source_files import inner_functions_assignment as ifa
