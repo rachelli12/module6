@@ -11,10 +11,10 @@ from source_files import inner_functions_assignment as ifa
 
 class MyTestCase(unittest.TestCase):
     def test_measurements_rectangle(self):
-        self.assertEqual(ifa.measurements([2.1, 3.4]), "Perimeter = 11.0 Area = 7.14")
+        self.assertEqual(ifa.measurements([5.6, 8.9]), "Perimeter=22.4 Area=31.4")
 
     def test_measurements_square(self):
-        self.assertRaises(ifa.measurements([3.5]), "Perimeter = 14.0 Area = 12.25")
+        self.assertEqual(ifa.measurements([4.2]), "Perimeter=16.8 Area=17.6")
 
 if __name__ =="__main__":
     unittest.main()
